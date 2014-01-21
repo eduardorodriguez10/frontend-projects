@@ -14,14 +14,21 @@
 .header {}
 
 .sidebar {
+	float:right;
+	width:25%;
+	height: 300px;
 	/* hint! */
 }
 
 .main_content {
+	float:left;
+	width:75%;
+	height: 300px;
 	/* hint! */
 }
 
 .footer {
+	clear:both;
 	/* hint! */
 }
 
