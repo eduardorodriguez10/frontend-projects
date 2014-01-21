@@ -14,20 +14,56 @@
 .header {}
 /* hint! what do you have to add here? */
 
-.logo {}
+.header:after{
+                    clear:both;
+                    display:block;
+                    visibility: hidden;
+                    content: "";
+                    height: 0;
+               }
 
-.navigation {}
+.logo {
+	float: left;
+	width: 15%;
+}
 
-.sidebar {}
+.navigation {
+	float: right;
+	width: 85%;
+}
 
-.main_content {}
+.sidebar {
+	clear:left;
+	float: left;
+	width:25%;
+	height:300px;
+}
+
+.main_content {
+
+}
 /* hint! you have to contain the floated children elements. */
-
+.main_content:after{
+            clear:both;
+            display:block;
+            visibility: hidden;
+            content: "";
+            height: 0;
+               }
 .sub_content {
+	float: right;
+	width:75%;
+	height: 150px;
 	/* hint! */
 }
 .sub_content_2 {
+	float: right;
+	width:75%;
+	height: 150px;
 	/* hint! */
 }
 
-.footer {}
+.footer {
+	clear:both;
+	height: 100px;
+}
