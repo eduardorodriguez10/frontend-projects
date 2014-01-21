@@ -13,20 +13,40 @@
 
 .header {}
 /* hint! you have to contain the floated children elements. */
-
+.header:after{
+	clear:both;
+	display:block;
+	visibility: hidden;
+	content: "";
+	height: 0;
+}
 .logo {
+	float:left;
+	width:15%;
 	/* hint! */
 }
 
 .navigation {
+	float: right;
+	width:85%;
 	/* hint! */
 }
 
 .sidebar {
+	clear:both;
+	float: left;
+	width:25%;
+	height: 300px;
 }
 
 .main_content {
+	clear:right;
+	float:right;
+	width:75%;
+	height: 300px;
 }
 
 .footer {
+	clear:both;
+	height: 100px;
 }
