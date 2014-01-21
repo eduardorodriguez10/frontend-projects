@@ -14,9 +14,19 @@
 .main_content {}
 /* hint! what do you need to add here? */
 
+.main_content:after{
+                    clear:both;
+                    display:block;
+                    visibility: hidden;
+                    content: "";
+                    height: 0;
+               }
+
 .widget {
 	/* how do you make the widgets float next to each other? */
 	/* what happens when you change float left to float right? why? */
+	float:left;
+	/*display:inline-block;*/
 }
 
 
@@ -26,9 +36,14 @@
 
 
 /* Bonus: what happens if you make a couple of the widgets taller than the other? */
-/*.widget.tall {}*/
+.widget.tall {
+	height: 300px;
+	/*float:right;*/
+}
 
 /* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? */
-/*.widget.fix {
+.widget.fix {
 	background: #8F1B65;
-}*/
+	clear:left;
+	/*float: right;*/
+}
