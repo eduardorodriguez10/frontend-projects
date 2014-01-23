@@ -5,4 +5,68 @@
 
 /* Example 11 */
 
-/* I'm blank! Write some CSS to style your layout! */
+
+.logo{
+	float:left;
+	width:20%;
+	background-color:#800000;
+	height: 100px;
+	margin-top:2%;
+	margin-left:10%;
+	text-transform: uppercase;
+	text-align:center;
+	padding-top:2%;
+}
+.navigation {
+	float:left;
+	margin-top:2%;
+	width:60%;
+	background-color:#eeeeee;
+	height: 100px;
+	text-transform: uppercase;
+	text-align:center;
+	padding-top:2%;
+}
+
+.header{
+	background-color:#2222FF;
+	text-align: left;
+}
+
+
+.header:after{
+                    clear:both;
+                    display:block;
+                    visibility: hidden;
+                    content: "";
+                    height: 20px;
+               }
+
+.products{
+	clear:both;
+	background-color:#2222FF;
+	margin-top:10%;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+
+.products:after{
+                    clear:both;
+                    display:block;
+                    visibility: hidden;
+                    content: "";
+                    height: 0;
+               }
+
+.product{
+	width:20%;
+	height: 150px;
+	background-color:#800000;
+	display: inline-block;
+	margin-left: 5%;
+	margin-top:5%;
+	font-size: 200%;
+	padding-top:10%;
+	color:#FFFFFF;
+}
